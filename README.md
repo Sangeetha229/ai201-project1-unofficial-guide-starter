@@ -286,7 +286,7 @@ Sources:
 ---
 ## Evaluation Report
 
- # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
+ **| Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |**
 
 
 | 1 | What do students say about Prof Joy DeLeon's exam difficulty in the Public Health department at TAMU? | Concept-heavy exams, fast lectures, dense slides, inconsistent grading, office hours hard to access | Students say that Prof Joy DeLeon's exams in the Public Health department at TAMU are difficult because they sometimes test content she mentioned only in passing [1], and the exam questions do not match the lecture emphasis [2]. According to students, her lectures are dense and fast-paced, making it hard to take detailed notes, and the textbook is more useful for learning the material [1], [4]. Additionally, students have reported that her exam questions can be concept-heavy, requiring synthesis across multiple lectures, and it's essential to start studying at least a week before [3]. Overall, students have found her exams to be challenging and recommend forming a study group or self-teaching from the textbook to prepare [1], [4].
