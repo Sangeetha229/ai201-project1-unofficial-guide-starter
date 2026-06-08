@@ -8,6 +8,7 @@ __pycache__/
 .venv/
 venv/
 env/
+*.egg-info/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -16,5 +17,10 @@ env/
 chroma_db/
 chroma/
 
-# macOS
-.DS_Store
+# Generated data — large files, rebuild with python main.py --build
+data/raw/
+data/chunks/
+data/vector_store/
+ 
+# VS Code
+.vscode/

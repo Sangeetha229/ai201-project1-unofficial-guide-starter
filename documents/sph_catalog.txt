@@ -1,0 +1,56 @@
+TAMU School of Public Health — Course Catalog and Faculty Directory
+Source: https://catalog.tamu.edu/undergraduate/public-health/
+Collected: 2025-06-01
+[REVIEW_END]
+Department: Health Behavior
+Source: TAMU SPH Catalog
+Faculty: Adam Barry PhD (Associate Professor), Joy DeLeon DrPH (Clinical Associate Professor), Brian Colwell PhD (Associate Professor), Samuel Towne PhD (Assistant Professor)
+Description: The Health Behavior department within the TAMU School of Public Health focuses on individual, interpersonal, and community-level determinants of health behavior. Faculty research encompasses health communication, community health assessment, and behavioral interventions for chronic disease prevention. Undergraduate courses in this department include HLTH 215, HLTH 310, HLTH 320, HLTH 370, HLTH 425, and HLTH 489.
+[REVIEW_END]
+Department: Epidemiology and Biostatistics
+Source: TAMU SPH Catalog
+Faculty: Angela Clendenin PhD (Clinical Associate Professor), Catherine Troisi PhD (Clinical Professor), additional faculty
+Description: The Epidemiology and Biostatistics department trains students in the principles and methods used to study the distribution and determinants of health and disease in populations. Students develop skills in study design, data collection and analysis, and interpretation of epidemiological evidence. Required for all public health majors. Upper division courses include applied epidemiology and biostatistics for public health.
+[REVIEW_END]
+Course: HLTH 215 Introduction to Public Health
+Department: Health Behavior
+Source: TAMU SPH Catalog
+Credits: 3
+Description: Survey of the core disciplines of public health including epidemiology, biostatistics, environmental health, health behavior, and health policy and management. Students examine the history and foundations of public health practice and explore current challenges in population health. Required for public health majors and pre-health minors. Typically taught by Barry, DeLeon, or Colwell.
+[REVIEW_END]
+Course: HLTH 310 Health Communication
+Department: Health Behavior
+Source: TAMU SPH Catalog
+Credits: 3
+Description: Principles and applications of health communication theory in public health practice. Topics include message design, health literacy, patient-provider communication, media advocacy, and social marketing. Students complete a health communication campaign design project. Taught by Brian Colwell. Recommended for pre-med students interested in patient education and communication.
+[REVIEW_END]
+Course: HLTH 320 Health Behavior Theory
+Department: Health Behavior
+Source: TAMU SPH Catalog
+Credits: 3
+Description: Examination of major theoretical frameworks used to understand and change health behavior. Topics include social cognitive theory, health belief model, transtheoretical model, social ecological model, and community-based participatory research. Case study application required. Primarily taught by Adam Barry. Listed as one of the most highly reviewed courses in the School of Public Health.
+[REVIEW_END]
+Course: HLTH 370 Social Determinants of Health
+Department: Health Behavior
+Source: TAMU SPH Catalog
+Credits: 3
+Description: Analysis of social, economic, environmental, and structural factors that shape population health outcomes and health inequities. Topics include neighborhood effects, income inequality, racism as a public health crisis, housing instability, and food systems. Discussion-based format. Taught by Catherine Cubbin PhD.
+[REVIEW_END]
+Course: HLTH 425 Community Health Assessment
+Department: Health Behavior
+Source: TAMU SPH Catalog
+Credits: 3
+Description: Applied methods for conducting community health needs assessments in partnership with local health departments and community organizations. Students complete a semester-long community assessment project in the Bryan-College Station region. Significant professional experience component. Taught by Adam Barry. Community partners have included Brazos Valley Health Department and local nonprofits.
+[REVIEW_END]
+Course: EPIB 301 Introduction to Epidemiology
+Department: Epidemiology and Biostatistics
+Source: TAMU SPH Catalog
+Credits: 3
+Description: Principles and methods of epidemiological investigation including study design, measures of disease frequency and association, bias, confounding, and epidemiological reasoning. Students read and critically evaluate primary epidemiological literature. Required for all public health majors. Prerequisite for EPIB 410 and EPIB 420. Taught by Angela Clendenin. Course involves two major written assignments and three examinations.
+[REVIEW_END]
+Course: EPIB 410 Applied Epidemiology
+Department: Epidemiology and Biostatistics
+Source: TAMU SPH Catalog
+Credits: 3
+Description: Application of epidemiological methods to real public health problems using secondary datasets from CDC, BRFSS, and NHANES. Students conduct original epidemiological analyses using SPSS or R. Topics include outbreak investigation, surveillance systems, and screening program evaluation. Prerequisite: EPIB 301. Taught by Angela Clendenin.
+[REVIEW_END]
