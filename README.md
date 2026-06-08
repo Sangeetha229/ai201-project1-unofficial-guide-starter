@@ -331,13 +331,6 @@ Do students recommend taking BIMS 301 with a specific professor at TAMU?
 
 **What the system returned:**
 
-## Failure Case Analysis
-
-*Question that failed:**
-
-Do students recommend taking BIMS 301 with a specific professor at TAMU?
-
-**What the system returned:**
 "No relevant student reviews found for that question.
 Try a professor name (Barry, DeLeon, Goodey, Clendenin, Herman)
 or a course code (HLTH 320, BIMS 301, CHEM 227, EPIB 301)."
