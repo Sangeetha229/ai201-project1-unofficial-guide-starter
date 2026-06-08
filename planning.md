@@ -24,7 +24,7 @@ Student-generated knowledge fills that gap. It's earned through lived experience
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | Rate My Professors — TAMU College Station|The primary source for individual professor ratings at Texas A&M. Filter by department (Biology, Chemistry, Public Health, BIMS). Includes quality scores, difficulty ratings, and written student reviews |https://www.ratemyprofessors.com/search/professors/1003?q=* Ra |
+| 1 | Rate My Professors — TAMU College Station|The primary source for individual professor ratings at Texas A&M. Filter by department (Biology, Chemistry, Public Health, BIMS). Includes quality scores, difficulty ratings, and written student reviews |https://www.ratemyprofessors.com/search/professors/1003?q=*|
 | 2 |r/aggies (Reddit) |The main TAMU subreddit where students post threads asking for professor recommendations, share course experiences, and give honest takes on pre-med prerequisites like Orgo, Biochem, and BIMS courses. Search "professor" or course name. |https://www.reddit.com/r/aggies |
 | 3 |Niche — TAMU Academics & Professor Reviews |Aggregates thousands of verified student reviews specifically about TAMU academics, professors, and course workload. Students comment on pre-med and STEM course rigor, professor quality, and overall teaching support. Includes an academics grade and searchable review filters. |https://www.niche.com/colleges/texas-a-and-m-university/academics/|
 | 4 |Coursicle — TAMU Professors | Lists professors at Texas A&M with student reviews tied directly to specific courses and sections, including what they're teaching each semester. Useful for pre-med and public health students planning their schedule since reviews are linked to real course offerings.|https://www.coursicle.com/tamu/professors/|
@@ -44,9 +44,9 @@ Student-generated knowledge fills that gap. It's earned through lived experience
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**200 - this matches the average length of one RMP/Niche review (2–5 sentences ≈ 60–180 tokens) closely enough that most reviews land in a single chunk naturally.
+Chunk size: 200 - this matches the average length of one RMP/Niche review (2–5 sentences ≈ 60–180 tokens) closely enough that most reviews land in a single chunk naturally.
 
-**Overlap:**50 A typical RMP or Niche review sentence runs 15–25 tokens. So 50 tokens carries roughly 2–3 sentences of context into the next chunk — enough to preserve meaning at a split boundary without excessive redundancy.
+Overlap: 50 A typical RMP or Niche review sentence runs 15–25 tokens. So 50 tokens carries roughly 2–3 sentences of context into the next chunk — enough to preserve meaning at a split boundary without excessive redundancy.
 
 **Reasoning:**
 
@@ -80,9 +80,13 @@ In a real production deployment serving TAMU pre-med and public health students,
 |---|----------|-----------------|
 
 | 1 |What do students say about Prof Joy DeLeon's exam difficulty in the Public Health department at TAMU? |Reviews should mention that her exams are concept-heavy, lectures move fast, slides are dense, and that her difficulty rating on RMP is 2.8. Answer should cite at least 2 student reviews from RMP or Coursiclee and mention her department  specifically. A vague answer like "she is hard" with no supporting student quotes or source citations is a failure. |
+
 | 2 |Do students recommend taking BIMS 301 with a specific professor at TAMU, and what reasons do they give? |Answer should name at least one specific professor who teaches BIMS 301, include student reasoning (teaching clarity, exam style, grading policy, or office hours usefulness), and cite the source (RMP or  Professors.directory). An answer that says "BIMS 301 is a hard course" without naming a professor or citing student opinions is a failure. |
+
 | 3 |What do TAMU pre-med students on Reddit say about which chemistry professor to take for Orgo 1 (CHEM 227)? |Answer should reference (RMP,Uloop,Couricle) as the source, name at least one professor recommended by students for CHEM 227, and include specific student reasoning such as exam structure, curve policy, or teaching style. An answer pulled only from RMP without mentioning Uloop is a partial failure — the question specifically asks about Reddit. |
+
 | 4 |How do students rate Prof Adam Barry's teaching quality in the TAMU School of Public Health, and would they take him again? |Answer should include his quality rating (expected high, 4.0+), his "would take again" percentage, at least 2 specific student comments about his teaching style or course content, and name his department. Answer must be grounded in cited review chunks — a generic positive answer without specifics or citations is a failure. |
+
 | 5 |What do Reddit students say about CHEM 227 professor recommendations?|It should return that it couldn't find relevant reviews otherwise it is a failure|
 
 ---
@@ -120,6 +124,7 @@ Second chunk starts without professor name, course number, or recommendation con
 50-token overlap carries back partial context but not enough to identify the professor or course
 Claude reads "Her exams are straightforward if you go to lecture" with no clear attribution — answer becomes vague or wrongly attributed
 Fix: Prepend professor name and course code to every chunk text during indexing so boundary chunks always carry identifying context
+
 ---
 
 ## Architecture
@@ -131,36 +136,14 @@ Fix: Prepend professor name and course code to every chunk text during indexing 
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
 
 
-Student question
-      │
-      ▼
-Stage 1 — ingest.py(Document Ingestion)
+Student question---->Stage 1 — ingest.py(Document Ingestion)
   10 sources from documents/ → data/raw/*.jsonl
-  Tool: plain .txt parser + optional PRAW for Reddit
-      │
-      ▼
-Stage 2 — clean.py
-  Strip HTML · normalize names · filter <20 word reviews · deduplicate
-      │
-      ▼
-Stage 3 — chunk.py(Chunking)
-  200 tokens · 50 overlap · [Professor:] prefix · [REVIEW_END] separator
-  LangChain RecursiveCharacterTextSplitter
-      │
-      ▼
-Stage 4 — embed.py(Embedding + Vector Store)
-  all-MiniLM-L6-v2 → 384-dim vectors → ChromaDB (local, no API key)
-      │
-      ▼
-Stage 5 — retrieve.py(Retrieval)
-  Embed query → course code + dept keyword filter → top-5 cosine similarity ≥ 0.50
-      │
-      ▼
-Stage 6 — generate.py(Generation)
-  Groq llama-3.3-70b-versatile → grounded answer → cited sources
-      │
-      ▼
-app.py → Gradio chat UI at http://127.0.0.1:7860
+ ( Tool: plain .txt parser + optional PRAW for Reddit)---->Stage 2 — clean.py
+  (Strip HTML · normalize names · filter <20 word reviews · deduplicate)---->Stage 3 — chunk.py(Chunking)  (200 tokens · 50 overlap · [Professor:] prefix · [REVIEW_END] separator
+  LangChain RecursiveCharacterTextSplitter)----->Stage 4 — embed.py(Embedding + Vector Store)
+  all-MiniLM-L6-v2 → 384-dim vectors → ChromaDB (local, no API key)---->Stage 5 — retrieve.py(Retrieval) (Embed query → course code + dept keyword filter → top-5 cosine similarity ≥ 0.50)---->Stage 6 — generate.py(Generation)
+  (Groq llama-3.3-70b-versatile → grounded answer → cited sources---->app.py → Gradio chat UI at http://127.0.0.1:7860)
+  
 
 ## AI Tool Plan
 

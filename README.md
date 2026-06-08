@@ -286,8 +286,9 @@ Sources:
 ---
 ## Evaluation Report
 
-| # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
-|---|----------|-----------------|------------------------------|-------------------|-------------------|
+ # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
+
+
 | 1 | What do students say about Prof Joy DeLeon's exam difficulty in the Public Health department at TAMU? | Concept-heavy exams, fast lectures, dense slides, inconsistent grading, office hours hard to access | Students say that Prof Joy DeLeon's exams in the Public Health department at TAMU are difficult because they sometimes test content she mentioned only in passing [1], and the exam questions do not match the lecture emphasis [2]. According to students, her lectures are dense and fast-paced, making it hard to take detailed notes, and the textbook is more useful for learning the material [1], [4]. Additionally, students have reported that her exam questions can be concept-heavy, requiring synthesis across multiple lectures, and it's essential to start studying at least a week before [3]. Overall, students have found her exams to be challenging and recommend forming a study group or self-teaching from the textbook to prepare [1], [4].
 
 Sources:
@@ -295,18 +296,18 @@ Sources:
 [2] Professor: Joy DeLeon | Dept: Public Health | Course: HLTH 215 | Source: Rate My Professors | Date: 2025-02-10
 [3] Professor: Joy DeLeon | Dept: Public Health | Course: HLTH 310 | Source: Rate My Professors | Date: 2024-08-20
 [4] Professor: Joy DeLeon | Dept: Public Health | Course: HLTH 215 | Source: Uloop | Date: 2024-09-01
-[5] Professor: Joy DeLeon | Dept: Public Health | Course: HLTH 215 | Source: Rate My Professors | Date: 2024-10-12
+[5] Professor: Joy DeLeon | Dept: Public Health | Course: HLTH 215 | Source: Rate My Professors | Date: 2024-10-12| Good| Accurate |
 
 | 2 | Do students recommend taking BIMS 301 with a specific professor at TAMU, and what reasons do they give? | Names Jim Herman, cites application-heavy exams, office hours value, MCAT prep, 8-point curve | Students highly recommend taking BIMS 301 with Professor Jim Herman at TAMU, citing that his course is "widely regarded as one of the most valuable" in the pre-med pathway [1]. They appreciate his application-focused exam style, which promotes genuine understanding over surface memorization, and note that his course consistently improves performance on MCAT biological sciences content [1]. Additionally, students praise Professor Herman's informative office hours, where he provides targeted guidance on areas to focus on [2]. However, they caution that his course is "not the right choice for students looking for an easy GPA boost," but rather for those committed to medical school preparation [1].
 Sources:
 [1] Professor: Jim Herman | Dept: BIMS | Course: BIMS 301 | Source: Professors.directory | Date: 2025-01-28
-[2] Professor: Jim Herman | Dept: BIMS | Course: BIMS 301 | Source: Rate My Professors | Date: 2025-02-10. | Relevant | Accurate |
+[2] Professor: Jim Herman | Dept: BIMS | Course: BIMS 301 | Source: Rate My Professors | Date: 2025-02-10. | Good | Accurate |
 
 | 3 | What do TAMU pre-med students on Reddit say about which chemistry professor to take for Orgo 1 (CHEM 227)? | References Rate My Professors, Uloop,Coursicle names Goodey, cites curve policy and practice exam match | If you're a pre-med student at TAMU looking to take Orgo 1 (CHEM 227), Professor Joanna Goodey is highly recommended by students [1], [2], [3]. She explains reaction mechanisms step by step, provides practice exams that mirror the real thing, and offers helpful office hours where she drops hints [1]. Her teaching method is systematic, and she curves the class at the end of the semester, which can be a big help - last year the curve was 9 points [2]. If you're a pre-med student, taking Goodey for Orgo 1 is considered to make your life easier [2].
 Sources:
 [1] Professor: Joanna Goodey | Dept: Chemistry | Course: CHEM 227 | Source: Rate My Professors | Date: 2024-12-01
 [2] Professor: Joanna Goodey | Dept: Chemistry | Course: CHEM 227 | Source: Uloop | Date: 2024-11-05
-[3] Professor: Joanna Goodey | Dept: Chemistry | Course: CHEM 227 | Source: Coursicle | Date: 2024-09-30 | Accurate |
+[3] Professor: Joanna Goodey | Dept: Chemistry | Course: CHEM 227 | Source: Coursicle | Date: 2024-09-30 | Good | Accurate |
 
 | 4 | How do students rate Prof Adam Barry's teaching quality in TAMU School of Public Health, and would they take him again? | Rating 4.0+, would take again, specific comments on teaching and course content | Students rate Prof Adam Barry's teaching quality highly in the TAMU School of Public Health, praising his well-organized courses, fair exams, and accessibility [1]. He is considered one of the best professors in the School of Public Health, with students appreciating how he combines theoretical frameworks with applied public health examples [2]. Students would definitely take him again, with one student stating they would take him for every HLTH course if possible [2]. His ability to make complex material feel relevant and his generosity with his time have set a high standard for what a good professor looks like [4].
 Sources:
@@ -314,11 +315,11 @@ Sources:
 [2] Professor: Adam Barry | Dept: Public Health | Course: HLTH 320 | Source: Rate My Professors | Date: 2025-01-15
 [3] Professor: Adam Barry | Dept: Public Health | Course: HLTH 320 | Source: Uloop | Date: 2024-10-15
 [4] Professor: Adam Barry | Dept: Public Health | Course: HLTH 215 | Source: Uloop | Date: 2024-08-22
-[5] Professor: Adam Barry | Dept: Public Health | Course: HLTH 320 | Source: Rate My Professors | Date: 2024-11-03 | Accurate |
+[5] Professor: Adam Barry | Dept: Public Health | Course: HLTH 320 | Source: Rate My Professors | Date: 2024-11-03 | Good | Accurate |
 
 | 5 | What do Reddit students say about CHEM 227 professor recommendations? |No relevant student reviews found for that question as no mention for professor recommendation for CHEM227 in reddit reviews  | No relevant student reviews found for that question.
 
-Try including a professor name (Barry, DeLeon, Goodey, Clendenin, Herman) or a course code (HLTH 320, BIMS 301, CHEM 227, EPIB 301). | Accurate |
+Try including a professor name (Barry, DeLeon, Goodey, Clendenin, Herman) or a course code (HLTH 320, BIMS 301, CHEM 227, EPIB 301).| Good | Accurate |
 
 ---
 
